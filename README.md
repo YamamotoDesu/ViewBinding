@@ -69,5 +69,10 @@ android {
 ```
 
 
-### Databinding VS  View Binding
-
+### The Difference Between Databinding and View Binding is only the initialization 
+```java 
+//DataBinding
+binding= DataBindingUtil.setContentView(this, R.layout.activity_main) as ActivityMainBinding
+//ViewBinding
+binding= ActivityMainBinding.inflate(layoutInflater)
+```
