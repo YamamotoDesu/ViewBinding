@@ -10,7 +10,23 @@ findViewById<TextView>(R.id.sample_text).apply {
 
 Layouts are called with the databindiing:
 ```java
-sample_text.text =  viewModel.userName
+private lateinit var binding: ActivityMainBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        binding.text = viewModel.userName
+        
 ```
 
+### Kotlin Android Extentions VS  Databinding
+**[Kotlin Android Extentions is not the recomendation](https://developers-jp.googleblog.com/2020/11/the-future-of-kotlin-android-extensions.html)** 
+
+### Databinding VS  View Binding
+**[Databinding is not the recomendation](https://proandroiddev.com/migrating-the-deprecated-kotlin-android-extensions-compiler-plugin-to-viewbinding-d234c691dec7)** 
+View binding is a feature that allows you to more easily write code that interacts with views. 
+
+
 ## How to Set Up
+
