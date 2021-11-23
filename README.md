@@ -25,6 +25,7 @@ private lateinit var binding: ActivityMainBinding
 
 ### Databinding VS  View Binding
 **[Databinding is not recommended](https://proandroiddev.com/migrating-the-deprecated-kotlin-android-extensions-compiler-plugin-to-viewbinding-d234c691dec7)** 
+
 View binding is a feature that allows you to more easily write code that interacts with views. 
 
 
