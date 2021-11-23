@@ -21,12 +21,25 @@ private lateinit var binding: ActivityMainBinding
 ```
 
 ### Kotlin Android Extentions VS  Databinding
-**[Kotlin Android Extentions is not the recomendation](https://developers-jp.googleblog.com/2020/11/the-future-of-kotlin-android-extensions.html)** 
+**[Kotlin Android Extentions is not recommended](https://developers-jp.googleblog.com/2020/11/the-future-of-kotlin-android-extensions.html)** 
 
 ### Databinding VS  View Binding
-**[Databinding is not the recomendation](https://proandroiddev.com/migrating-the-deprecated-kotlin-android-extensions-compiler-plugin-to-viewbinding-d234c691dec7)** 
+**[Databinding is not recommended](https://proandroiddev.com/migrating-the-deprecated-kotlin-android-extensions-compiler-plugin-to-viewbinding-d234c691dec7)** 
 View binding is a feature that allows you to more easily write code that interacts with views. 
 
 
 ## How to Set Up
+build.app(Module)
+```gradle
+android {
+    buildFeatures{
+        dataBinding = true
+        viewBinding = true
+    }
+    dataBinding{
+        enabled=true
+    }
 
+}
+
+```
